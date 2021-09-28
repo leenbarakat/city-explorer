@@ -24,7 +24,7 @@ class App extends React.Component {
     console.log(this.state.searchQuery)
 
     try{    
-      let url = `http://localhost:3001/weather/${this.state.searchQuery}`;
+      let url = `https://city-explorer-number1.herokuapp.com/weather/${this.state.searchQuery}`;
       let data = await axios.get(url);
       console.log(data.data)
       this.setState({
